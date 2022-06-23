@@ -157,6 +157,18 @@ address {
   letter-spacing: 0.02em;
 }
 
+.icon-envelope::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/envelope.svg);
+  margin-right: 10px;
+  align-items: center;
+
+  width: 16px;
+  height: 12px;
+  outline: 1px solid red;
+}
+
 .list .link.current,
 .list .link:hover,
 .list .link:focus {
@@ -167,8 +179,14 @@ address {
 
 .hero {
   padding: 200px 0;
-  background: var(--hero-bg-color);
+
+  background-color: var(--hero-bg-color);
 }
+
+.hero-bg {
+  background-image: url(../images/bg-hero.jpg);
+}
+
 .hero-title {
   display: block;
   width: 696px;
@@ -193,10 +211,7 @@ address {
   margin-left: auto;
   border: 0;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  color: var(--white-txt-color);
-  background-color: var(--accent-color);
   font-family: inherit;
   cursor: pointer;
   font-weight: 700;
@@ -204,6 +219,10 @@ address {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white-txt-color);
+  background-color: var(--accent-color);
 }
 
 .hero-button:hover,
