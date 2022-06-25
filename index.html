@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,9 +19,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-
-    <title>Студия</title>
   </head>
+
   <body>
     <!--header-->
     <header class="header">
@@ -34,11 +34,17 @@
           </ul>
         </nav>
         <ul class="list list-contacts">
-          <li class="item icon-envelope">
-            <a class="link contact" href="mail:info@devstudio.com">info@devstudio.com</a>
+          <li class="item header-contact-item">
+            <svg class="icon-envelope" width="16px" height="12px">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            <a class="link contact" href="mail:info@devstudio.com"> info@devstudio.com </a>
           </li>
-          <li class="item">
-            <a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="item header-contact-item">
+            <svg class="icon-vector" width="10px" height="16px">
+              <use href="./images/symbol-defs.svg#icon-vector"></use>
+            </svg>
+            <a class="link contact" href="tel:+380961111111"> +38 096 111 11 11 </a>
           </li>
         </ul>
       </div>
@@ -56,6 +62,28 @@
       <section class="services section">
         <div class="conteiner services-flex">
           <h2 class="visualli-hedden">Наши преимущества</h2>
+          <ul class="list-icon list">
+            <li class="icon-item">
+              <svg class="services-icon" width="70px" height="70px">
+                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+              </svg>
+            </li>
+            <li class="icon-item">
+              <svg class="services-icon" width="70px" height="70px">
+                <use href="./images/symbol-defs.svg#icon-clock"></use>
+              </svg>
+            </li>
+            <li class="icon-item">
+              <svg class="services-icon" width="70px" height="70px  ">
+                <use href="./images/symbol-defs.svg#icon-diagram"></use>
+              </svg>
+            </li>
+            <li class="icon-item">
+              <svg class="services-icon" width="70px" height="70px">
+                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+              </svg>
+            </li>
+          </ul>
           <ul class="services-list list">
             <li class="services-item">
               <h3 class="title">Внимание к деталям</h3>
@@ -63,19 +91,19 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="services-item">
+            <li class="services-item icon-clock">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="services-item">
+            <li class="services-item icon-diagram">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="services-item">
+            <li class="services-item icon-astronaut">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -128,6 +156,36 @@
                 <h3 class="title">Игорь Демьяненко</h3>
                 <p class="text">Product Designer</p>
               </div>
+              <ul class="list">
+                <li>
+                  <a href="./index.html">
+                    <svg width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="./index.html">
+                    <svg width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="./index.html">
+                    <svg width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="./index.html">
+                    <svg width="20px" height="20px">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="time-item">
               <img
@@ -140,6 +198,12 @@
                 <h3 class="title">Ольга Репина</h3>
                 <p class="text">Frontend Developer</p>
               </div>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </li>
             <li class="time-item">
               <img
@@ -152,6 +216,12 @@
                 <h3 class="title">Николай Тарасов</h3>
                 <p class="text">Marketing</p>
               </div>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </li>
             <li class="time-item">
               <img
@@ -164,9 +234,27 @@
                 <h3 class="title">Михаил Ермаков</h3>
                 <p class="text">UI Designer</p>
               </div>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </li>
           </ul>
         </div>
+      </section>
+
+      <!-- clients -->
+      <section>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
     </main>
 
