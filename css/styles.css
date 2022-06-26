@@ -456,6 +456,8 @@ address {
 }
 
 .client-icon {
+  width: 106px;
+  height: 92px;
   fill: currentColor;
 }
 
