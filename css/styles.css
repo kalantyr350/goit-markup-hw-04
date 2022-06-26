@@ -22,7 +22,7 @@
   --button-accent: #188ce8;
   --border-hero-cl: #ececec;
   --border-project-cl: #eeeeee;
-  --icon-team-cl: #afb1b8;
+  --icon-cl: #afb1b8;
 }
 
 body {
@@ -150,7 +150,8 @@ address {
 }
 
 .link-contact {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -168,10 +169,10 @@ address {
 .icon-envelope,
 .icon-vector {
   margin-right: 10px;
-  fill: var(--icon-header-cl);
+  fill: currentColor;
 }
 
-.link-contact:hover .icon-envelope,
+.link-contact:hover,
 .icon-envelope:focus {
   fill: var(--accent-color);
 }
@@ -388,25 +389,25 @@ address {
   letter-spacing: 0.03em;
 }
 
-.socials-linc-list {
+.socials-link-list {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding-bottom: 30px;
 }
 
-.social-linc {
+.social-link {
   display: flex;
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--icon-team-cl);
+  color: var(--icon-cl);
 }
 
-.social-linc:hover,
-.social-linc:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   color: var(--white-txt-color);
 }
@@ -418,6 +419,7 @@ address {
 /* clients */
 
 .client-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -427,8 +429,35 @@ address {
 }
 
 .clients-list {
-  display: flex;
+  display: inline-flex;
 }
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-cl);
+  border: 1px solid var(--icon-cl);
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
 /* footer */
 
 .footer {
@@ -489,7 +518,7 @@ address {
   gap: 10px;
 }
 
-.footer-social-linc {
+.footer-social-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -502,8 +531,8 @@ address {
 .footer-social-icon {
   fill: var(--white-txt-color);
 }
-.footer-social-linc:hover,
-.footer-social-linc:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
