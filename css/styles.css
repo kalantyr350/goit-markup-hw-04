@@ -149,7 +149,7 @@ address {
   margin-left: auto;
 }
 
-.link.contact {
+.link-contact {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -171,14 +171,14 @@ address {
   fill: var(--icon-header-cl);
 }
 
-.icon-envelope:hover,
+.link-contact:hover .icon-envelope,
 .icon-envelope:focus {
   fill: var(--accent-color);
 }
 
 .list .link.current,
-.list .link:hover,
-.list .link:focus {
+.link-contact:hover,
+.link-contact:focus {
   color: var(--accent-color);
 }
 
@@ -367,7 +367,7 @@ address {
 
 .team-conteiner {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-list .title {
@@ -388,6 +388,47 @@ address {
   letter-spacing: 0.03em;
 }
 
+.socials-linc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.social-linc {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--icon-team-cl);
+}
+
+.social-linc:hover,
+.social-linc:focus {
+  background-color: var(--accent-color);
+  color: var(--white-txt-color);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+/* clients */
+
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.clients-list {
+  display: flex;
+}
 /* footer */
 
 .footer {
@@ -395,6 +436,10 @@ address {
   padding-bottom: 60px;
 
   background-color: var(--hero-bg-color);
+}
+
+.conteiner-flex {
+  display: flex;
 }
 
 .logo-footer {
@@ -421,6 +466,45 @@ address {
   color: var(--footer-secondori-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-social-conteiner {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.title-social {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-txt-color);
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-social-linc {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icon {
+  fill: var(--white-txt-color);
+}
+.footer-social-linc:hover,
+.footer-social-linc:focus {
+  background-color: var(--accent-color);
 }
 
 /* portfolio.html */
