@@ -247,11 +247,6 @@ address {
 
 /* main */
 
-.services .title {
-  h
-  color: var(--text-color);
-}
-
 /* services */
 
 .icon-item {
@@ -294,6 +289,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--text-color);
 }
 
 .services .text {
@@ -368,7 +364,6 @@ address {
 
 .team-conteiner {
   padding: 30px 0;
- 
 }
 
 .team-list .title {
@@ -474,7 +469,6 @@ address {
 .conteiner-flex {
   display: flex;
   align-items: baseline;
-
 }
 
 .logo-footer {
@@ -506,7 +500,7 @@ address {
 .address-studio:hover,
 .address-studio:focus,
 .address-contact:hover,
-.address-contact:focus{
+.address-contact:focus {
   color: var(--accent-color);
 }
 
@@ -515,6 +509,7 @@ address {
 }
 
 .title-social {
+  display: inline-block;
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -607,18 +602,15 @@ address {
   margin-bottom: 0;
 }
 
-
-
 .project-link {
   text-decoration: none;
 }
 
-.project-item> .project-link:hover,
-.project-item> .project-link:focus{
+.project-item > .project-link:hover,
+.project-item > .project-link:focus {
   display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-   0px 4px 4px rgba(0, 0, 0, 0.06), 
-   1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .txt-conteiner {
